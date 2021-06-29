@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getMergeSortAnimations } from "./sortingAlgorithms.js";
 import "./Visualizer.css";
 
-const ANIMATION_SPEED_MS = 2;
-const NUMBER_OF_ARRAY_BARS = 200;
+const ANIMATION_SPEED_MS = 5;
+const NUMBER_OF_ARRAY_BARS = 50;
 const PRIMARY_COLOR = "#FE6D73";
 const SECONDARY_COLOR = "#50FFB1";
 
@@ -17,7 +17,7 @@ function Visualizer() {
   function resetArray() {
     const array = [];
     for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
-      array.push(randomIntFromInterval(5, 730));
+      array.push(randomIntFromInterval(5, 500));
     }
     setArray(array);
   }
@@ -62,9 +62,7 @@ function Visualizer() {
           }}
         ></div>
       ))}
-      <button onClick={() => resetArray()}>
-        RESET BARS
-      </button>
+      <button onClick={() => resetArray()}>RESET BARS</button>
       <button onClick={() => mergeSort()}>MERGE SORT</button>
     </div>
   );

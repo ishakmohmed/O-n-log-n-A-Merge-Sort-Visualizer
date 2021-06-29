@@ -6,6 +6,55 @@
 .array-bar {
   border-radius: 5rem;
   display: inline-block;
-  width: 5px;
+  width: 10px;
   margin: 0 2px;
+}
+
+@media screen and (max-width: 780px) {
+  .array-bar {
+    width: 8px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .array-bar {
+    width: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .array-bar {
+    width: 5px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .array-bar {
+    width: 4px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .array-bar {
+    width: 3px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .array-bar {
+    width: 2px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .array-bar {
+    width: 1px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .array-bar {
+    width: 1px;
+    margin: 0 1px;
+  }
 }
