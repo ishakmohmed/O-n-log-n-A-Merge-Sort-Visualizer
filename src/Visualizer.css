@@ -1,0 +1,11 @@
+.array-container {
+  border: 1px solid white;
+  padding: 2rem;
+}
+
+.array-bar {
+  border-radius: 5rem;
+  display: inline-block;
+  width: 5px;
+  margin: 0 2px;
+}
