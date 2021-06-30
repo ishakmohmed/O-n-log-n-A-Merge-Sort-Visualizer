@@ -1,8 +1,8 @@
-.array-container {
+.container {
   margin-top: 5rem;
 }
 
-.array-bar {
+.bar {
   border-radius: 5rem;
   display: inline-block;
   width: 10px;
@@ -44,49 +44,49 @@
 }
 
 @media screen and (max-width: 780px) {
-  .array-bar {
+  .bar {
     width: 8px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .array-bar {
+  .bar {
     width: 6px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .array-bar {
+  .bar {
     width: 5px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .array-bar {
+  .bar {
     width: 4px;
   }
 }
 
 @media screen and (max-width: 470px) {
-  .array-bar {
+  .bar {
     width: 3px;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .array-bar {
+  .bar {
     width: 2px;
   }
 }
 
 @media screen and (max-width: 380px) {
-  .array-bar {
+  .bar {
     width: 1px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .array-bar {
+  .bar {
     width: 1px;
     margin: 0 1px;
   }

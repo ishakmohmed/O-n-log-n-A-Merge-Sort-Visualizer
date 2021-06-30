@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import { getMergeSortAnimations } from "./sortingAlgorithms.js";
 import "./Visualizer.css";
 
-const ANIMATION_SPEED_MS = 20 ;
-const NUMBER_OF_ARRAY_BARS = 50;
-const PRIMARY_COLOR = "#FE6D73";
-const SECONDARY_COLOR = "#50FFB1";
+const sortingSpeedInMs = 20;
+const numberOfVerticalBars = 50;
+const pink = "#FE6D73";
+const green = "#50FFB1";
 
 function Visualizer() {
   const [array, setArray] = useState([]);
-  const [isSorting, setIsSorting] = useState(false);
 
   useEffect(() => {
     resetArray();
@@ -17,36 +16,34 @@ function Visualizer() {
 
   function resetArray() {
     const array = [];
-    for (let i = 0; i < NUMBER_OF_ARRAY_BARS; i++) {
+    for (let i = 0; i < numberOfVerticalBars; i++) {
       array.push(randomIntFromInterval(5, 400));
     }
     setArray(array);
   }
 
   function mergeSort() {
-    setIsSorting(true);
     const animations = getMergeSortAnimations(array);
     for (let i = 0; i < animations.length; i++) {
-      const arrayBars = document.getElementsByClassName("array-bar");
+      const arrayBars = document.getElementsByClassName("bar");
       const isColorChange = i % 3 !== 2;
       if (isColorChange) {
         const [barOneIdx, barTwoIdx] = animations[i];
         const barOneStyle = arrayBars[barOneIdx].style;
         const barTwoStyle = arrayBars[barTwoIdx].style;
-        const color = i % 3 === 0 ? SECONDARY_COLOR : PRIMARY_COLOR;
+        const color = i % 3 === 0 ? green : pink;
         setTimeout(() => {
           barOneStyle.backgroundColor = color;
           barTwoStyle.backgroundColor = color;
-        }, i * ANIMATION_SPEED_MS);
+        }, i * sortingSpeedInMs);
       } else {
         setTimeout(() => {
           const [barOneIdx, newHeight] = animations[i];
           const barOneStyle = arrayBars[barOneIdx].style;
           barOneStyle.height = `${newHeight}px`;
-        }, i * ANIMATION_SPEED_MS);
+        }, i * sortingSpeedInMs);
       }
     }
-    setIsSorting(false);
   }
 
   function randomIntFromInterval(min, max) {
@@ -55,22 +52,22 @@ function Visualizer() {
 
   return (
     <>
-      <div className="array-container">
-        {array.map((value, idx) => (
+      <div className="container">
+        {array.map((value, index) => (
           <div
-            className="array-bar"
-            key={idx}
+            className="bar"
+            key={index}
             style={{
-              backgroundColor: PRIMARY_COLOR,
+              backgroundColor: pink,
               height: `${value}px`,
             }}
           ></div>
         ))}
       </div>
-      <button disabled={isSorting} className="button" onClick={() => resetArray()}>
+      <button className="button" onClick={() => resetArray()}>
         <strong>RESET BARS</strong>
       </button>
-      <button disabled={isSorting} className="button" onClick={() => mergeSort()}>
+      <button className="button" onClick={() => mergeSort()}>
         <strong>MERGE SORT</strong>
       </button>
     </>
