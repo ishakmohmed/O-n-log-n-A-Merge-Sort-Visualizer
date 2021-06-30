@@ -30,28 +30,6 @@
   margin-bottom: 2rem;
 }
 
-.footer-text {
-  color: #fe6d73;
-  font-size: 1rem;
-  margin-top: 2rem;
-  font-weight: bold;
-}
-
-.info {
-  color: white;
-}
-
-.subtitle {
-  color: white;
-  font-style: italic;
-}
-
-.title {
-  color: white;
-  font-size: 2rem;
-  margin-top: 4rem;
-}
-
 @media screen and (max-width: 780px) {
   .bar {
     width: 8px;
