@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getMergeSortAnimations } from "./sortingAlgorithms.js";
+import { getAnimations } from "./sortingAlgorithms.js";
 import "./Visualizer.css";
 
 const sortingSpeedInMs = 20;
@@ -23,7 +23,7 @@ function Visualizer() {
   }
 
   function mergeSort() {
-    const animations = getMergeSortAnimations(array);
+    const animations = getAnimations(array);
     for (let i = 0; i < animations.length; i++) {
       const arrayBars = document.getElementsByClassName("bar");
       const isColorChange = i % 3 !== 2;
