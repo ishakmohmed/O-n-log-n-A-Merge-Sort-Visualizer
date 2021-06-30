@@ -1,8 +1,3 @@
-.container {
-  margin-top: 5rem;
-  margin-bottom: 2rem;
-}
-
 .bar {
   border-radius: 5rem;
   display: inline-block;
@@ -28,6 +23,18 @@
   background: #f6b93b;
   border-color: #f6b93b;
   transition: all 0.4s ease 0s;
+}
+
+.container {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  color: #fe6d73;
+  font-size: 1rem;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
 .info {

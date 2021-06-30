@@ -11,6 +11,7 @@ function App() {
       <p className="info">
         * please wait till sorting finishes before clicking any buttons
       </p>
+      <p className="footer-text">Made with ❤ & simplicity by Mohmed Ishak</p>
     </div>
   );
 }
