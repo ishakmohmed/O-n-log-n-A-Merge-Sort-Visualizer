@@ -5,12 +5,14 @@
 .footer-text {
   color: #fe6d73;
   font-size: 1rem;
-  margin-top: 2rem;
   font-weight: bold;
+  margin-top: 2rem 1rem;
+  text-align: center;
 }
 
 .info {
   color: white;
+  margin: 0 0.5rem;
 }
 
 .subtitle {
