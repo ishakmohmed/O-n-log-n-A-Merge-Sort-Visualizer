@@ -7,16 +7,17 @@ https://onlogn.netlify.app/
 ### [2] Introduction
 O (n log n) is a merge sort visualizer made using React and CSS. The core element in this visualizer is the merge sort algorithm itself which runs in O (n log(n)) time complexity in an average case.
 
-### [4] Technologies Used/Features Implemented
+### [3] Technologies Used/Features Implemented
 * React
 * CSS
 * Merge sort algorithm
 * Netlify 
 
+### [4] Screenshots
 #### Main screen (bars are in random height by default)
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/124313698-cf5c0a80-dba3-11eb-8412-3ff60621aa4a.png)
 
-#### Main screen (bars are arranged using merge sort algorithm in an animated manner)
+#### Main screen (bars are arranged using merge sort algorithm in an animated manner when the "MERGE SORT" button is clicked)
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/124313815-fca8b880-dba3-11eb-94ee-f6eef5e000f0.png)
 
 ### [5] How to Run the Project Locally
