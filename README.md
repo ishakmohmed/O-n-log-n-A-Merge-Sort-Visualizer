@@ -20,9 +20,9 @@ O (n log n) is a merge sort visualizer made using React and CSS. The core elemen
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/124313815-fca8b880-dba3-11eb-94ee-f6eef5e000f0.png)
 
 
-### [6] How to Run the Project Locally
+### [5] How to Run the Project Locally
 If you want to just view the completed, hosted version of this app, refer point 1 above. Otherwise, keep reading. Fork this repository and clone it to your machine. Make sure you've got Node installed your machine. 
 Then install all frontend dependencies by typing ```npm i``` in terminal for frontend folder. Then, launch the app from the frontend folder in the terminal by typing ```npm start```. A website will be launched.  
 
-### [7] Hosting
+### [6] Hosting
 * Frontend: Netlify
