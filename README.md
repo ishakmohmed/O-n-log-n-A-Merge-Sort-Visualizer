@@ -13,10 +13,6 @@ O (n log n) is a merge sort visualizer made using React and CSS. The core elemen
 * Merge sort algorithm
 * Netlify 
 
-### [5] Screenshots
-#### Home screen of Fair Burger
-![1](https://user-images.githubusercontent.com/52876913/120933155-62339180-c72b-11eb-858a-7ae61097ba74.png)
-
 #### Main screen (bars are in random height by default)
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/124313698-cf5c0a80-dba3-11eb-8412-3ff60621aa4a.png)
 
