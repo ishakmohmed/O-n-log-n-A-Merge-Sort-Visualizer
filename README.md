@@ -20,7 +20,7 @@ Main screen (bars are in random height by default):
 
 Main screen (bars are arranged using merge sort algorithm in an animated manner when the "MERGE SORT" button is clicked):
 
-![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/124313815-fca8b880-dba3-11eb-94ee-f6eef5e000f0.png)
+![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/136453623-d15cb028-ee1c-410a-a50f-4b6f864c8df1.png)
 
 ### [5] How to Run the Project Locally
 If you want to just view the completed, hosted version of this app, refer point 1 above. Otherwise, keep reading. Fork this repository and clone it to your machine. Make sure you've got Node installed on your machine. Then, install all frontend dependencies by typing ```npm i``` in terminal for frontend folder. Then, launch the app from the frontend folder in the terminal by typing ```npm start```. The visualizer will be launched.  
