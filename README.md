@@ -14,12 +14,7 @@ O (n log n) is a merge sort visualizer made using React and CSS. The core elemen
 * Netlify 
 
 ### [4] Screenshots
-Main screen (bars are in random height by default):
-
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/136453167-45e50ad2-95be-4ec7-8510-7fb0fbee6821.png)
-
-Main screen (bars are arranged using merge sort algorithm in an animated manner when the "MERGE SORT" button is clicked):
-
 ![Mohmed Ishak](https://user-images.githubusercontent.com/52876913/136453623-d15cb028-ee1c-410a-a50f-4b6f864c8df1.png)
 
 ### [5] How to Run the Project Locally
